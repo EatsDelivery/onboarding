@@ -46,7 +46,7 @@ function open(url){ window.open(url, '_blank', 'noopener'); }
 function remaining(until){ return timersEnabled ? Math.max(0, until-Date.now()) : 0; }
 function time(ms){ const s=Math.ceil(ms/1000); return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
 function lockedLabel(label, until){ if(!until || remaining(until)===0) return label; setTimeout(render, 1000); return `${label} · ${time(remaining(until))}`; }
-function setProgress(step){ document.querySelector('#progressText').textContent=`Pasul ${step} din 5`; document.querySelector('#progressPercent').textContent=`${step*20}%`; document.querySelector('#progressBar').style.width=`${step*20}%`; }
+function setProgress(step){ document.querySelectorAll('.step').forEach((item,index)=>{ const current=index===step-1; item.classList.toggle('current',current); item.classList.toggle('complete',index<step-1); item.toggleAttribute('aria-current',current); }); document.querySelectorAll('.step-connector').forEach((line,index)=>line.classList.toggle('complete',index<step-1)); }
 function action(label, handler, secondary=false, disabled=false){ return `<button class="button ${secondary?'secondary':''}" ${disabled?'disabled':''} onclick="${handler}">${label}</button>`; }
 function ext(label,url,secondary=false){ return `<a class="button ${secondary?'secondary':''}" href="${url}" target="_blank" rel="noopener">${label}</a>`; }
 function randomSet(){ return [...questions].sort(()=>Math.random()-.5).slice(0,10).map(q=>q.id); }
