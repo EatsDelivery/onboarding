@@ -69,3 +69,13 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* Reserve vertical room for enlarged mobile step icons inside the scroll area. */
 @media(max-width:780px){.stepper{padding:26px 18px 28px}}
+
+/* Two compact, fully visible rows for the five onboarding stages on phones. */
+@media(max-width:780px){
+  .stepper{display:grid;grid-template-columns:1fr 64px 43px 64px 1fr;grid-template-rows:auto auto;align-items:center;justify-items:center;min-width:0;overflow:visible;margin:0 0 24px;padding:26px 0 28px;row-gap:28px}
+  .stepper>.step{width:43px;grid-row:1}
+  .stepper>.step:nth-child(1){grid-column:1}.stepper>.step:nth-child(3){grid-column:3}.stepper>.step:nth-child(5){grid-column:5}
+  .stepper>.step:nth-child(7){grid-column:2;grid-row:2}.stepper>.step:nth-child(9){grid-column:4;grid-row:2}
+  .stepper>.step-connector{width:100%;min-width:0;max-width:none;margin:0;grid-row:1}
+  .stepper>.step-connector:nth-child(2){grid-column:2}.stepper>.step-connector:nth-child(4){grid-column:4}.stepper>.step-connector:nth-child(6){display:none}.stepper>.step-connector:nth-child(8){grid-column:3;grid-row:2}
+}
