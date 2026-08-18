@@ -72,9 +72,9 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* The introduction mark now uses the same visual language as the other step icons. */
 .intro-icon{width:48px;height:48px}
-.intro-icon img{width:46px;height:46px}
+.intro-icon img{width:52px;height:52px;transform:translateY(1px)}
 .step.current .intro-icon{transform:scale(1.5)}
-@media(max-width:780px){.intro-icon{width:43px;height:43px}.intro-icon img{width:41px;height:41px}}
+@media(max-width:780px){.intro-icon{width:43px;height:43px}.intro-icon img{width:47px;height:47px}}
 
 /* The wider Bolt artwork needs a slight optical correction within the stepper. */
 .bolt-icon{transform:translate(-6px,-4px) scale(1)}
