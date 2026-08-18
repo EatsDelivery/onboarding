@@ -26,3 +26,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .question .options{position:relative;gap:9px;padding:22px 20px 20px;border:1px solid rgba(151,181,215,.3);border-radius:18px;background:linear-gradient(145deg,rgba(31,44,62,.97),rgba(20,31,47,.96));box-shadow:0 15px 31px rgba(0,0,0,.16)}
 .question .option{background:rgba(26,37,53,.84)}
 @media(max-width:480px){.question legend{width:calc(100% - 20px);margin-left:10px;margin-right:10px;padding:12px 15px 14px}.question .options{padding:19px 14px 15px}}
+
+/* Primary actions echo the purple tones in the page artwork. */
+.button{font-family:"DM Sans",Arial,sans-serif;font-size:16px;font-weight:750;background:linear-gradient(135deg,#593478,#38214f);border-color:rgba(181,145,221,.62);color:#fff;box-shadow:0 10px 24px rgba(70,37,107,.35)}
+.resume-dialog .button:not(.secondary){color:#fff}
+.button:hover:not(:disabled){box-shadow:0 12px 28px rgba(101,59,149,.5)}
