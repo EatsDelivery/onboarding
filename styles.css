@@ -18,3 +18,11 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .button:hover:not(:disabled){filter:brightness(1.06);box-shadow:0 12px 28px rgba(21,197,137,.3)}
 .resume-dialog{background:linear-gradient(145deg,rgba(26,39,59,.98),rgba(13,21,35,.97));backdrop-filter:blur(18px)}
 .site-title{margin:4px 0 30px;text-align:center;color:#f6f8fc;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.04em;text-wrap:balance;text-shadow:0 4px 22px rgba(0,0,0,.48)}
+
+/* Quiz cards: the prompt forms a connected header for its answers. */
+.question{margin:0 0 30px;padding:0;border:0;background:transparent}
+.question legend{box-sizing:border-box;position:relative;z-index:1;width:calc(100% - 28px);margin:0 14px -1px;padding:13px 19px 15px;border:1px solid rgba(100,224,178,.48);border-bottom:0;border-radius:18px 18px 0 0;background:linear-gradient(125deg,rgba(25,104,89,.97),rgba(22,48,59,.98));color:#f4fbf8;box-shadow:0 -8px 22px rgba(31,202,148,.09);font-weight:750;line-height:1.4}
+.question legend::before{content:"ÎNTREBARE";display:block;margin-bottom:5px;color:#77ebc0;font-size:10px;font-weight:800;letter-spacing:.13em;line-height:1}
+.question .options{position:relative;gap:9px;padding:22px 20px 20px;border:1px solid rgba(151,181,215,.3);border-radius:18px;background:linear-gradient(145deg,rgba(31,44,62,.97),rgba(20,31,47,.96));box-shadow:0 15px 31px rgba(0,0,0,.16)}
+.question .option{background:rgba(26,37,53,.84)}
+@media(max-width:480px){.question legend{width:calc(100% - 20px);margin-left:10px;margin-right:10px;padding:12px 15px 14px}.question .options{padding:19px 14px 15px}}
