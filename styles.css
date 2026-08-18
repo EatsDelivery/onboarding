@@ -31,3 +31,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .button{font-family:"DM Sans",Arial,sans-serif;font-size:16px;font-weight:750;background:linear-gradient(135deg,#593478,#38214f);border-color:rgba(181,145,221,.62);color:#fff;box-shadow:0 10px 24px rgba(70,37,107,.35)}
 .resume-dialog .button:not(.secondary){color:#fff}
 .button:hover:not(:disabled){box-shadow:0 12px 28px rgba(101,59,149,.5)}
+
+/* Let the calendar and Telegram marks dissolve softly into the dark stepper. */
+.calendar-payment-icon,.step.current .calendar-payment-icon,.step.complete .calendar-payment-icon{border:0;background:transparent}
+.calendar-payment-icon>span:first-child{position:relative;z-index:1;display:grid;place-items:center;width:42px;height:42px;filter:drop-shadow(0 0 7px rgba(116,156,255,.22));-webkit-mask-image:radial-gradient(circle,#000 43%,rgba(0,0,0,.82) 57%,transparent 76%);mask-image:radial-gradient(circle,#000 43%,rgba(0,0,0,.82) 57%,transparent 76%)}
+.telegram-icon img{filter:drop-shadow(0 0 8px rgba(55,178,255,.3));-webkit-mask-image:radial-gradient(circle,#000 45%,rgba(0,0,0,.84) 62%,transparent 82%);mask-image:radial-gradient(circle,#000 45%,rgba(0,0,0,.84) 62%,transparent 82%)}
