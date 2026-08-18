@@ -99,3 +99,6 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 /* Registration artwork has the same visual scale as the other custom step marks. */
 .registration-icon img{width:51px;height:51px}
 @media(max-width:780px){.registration-icon img{width:47px;height:47px}}
+
+/* Bring the mobile stepper closer to the heading, while preserving its space above the content card. */
+@media(max-width:560px){.stepper{margin:-42px 0 66px}}
