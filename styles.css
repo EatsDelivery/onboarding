@@ -46,6 +46,16 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .telegram-guides,.guide-followup{margin-top:25px;padding:22px;border:1px solid rgba(178,153,228,.28);border-radius:18px;background:linear-gradient(145deg,rgba(30,26,53,.76),rgba(13,20,36,.84))}
 .telegram-guides{display:grid;gap:11px}.telegram-guides .button{width:100%;min-height:48px}.guide-label{color:#dce4f2;font-size:14px;font-weight:750;letter-spacing:.02em;text-align:center}.guide-followup p{margin:0;color:#e0e5ee}.guide-followup .actions{margin-top:17px}.button.danger{border-color:rgba(215,114,129,.6);background:linear-gradient(135deg,#6b303e,#3d1d28);color:#fff;box-shadow:0 10px 24px rgba(103,35,50,.3)}
 
+/* Telegram guide actions mirror the blue Telegram mark, while the community action is distinct. */
+.telegram-guides .guide-label{margin:0 0 5px;color:#aee2ff;font-size:18px;font-weight:850;letter-spacing:.08em}
+.telegram-guides .button.secondary{border-color:rgba(92,190,255,.55);background:linear-gradient(135deg,#327bae,#244f86);box-shadow:0 9px 22px rgba(38,129,207,.22)}
+.telegram-guides .button.secondary:hover:not(:disabled){box-shadow:0 12px 27px rgba(43,154,236,.36)}
+.telegram-community-action{margin-top:34px}.telegram-community-button{min-width:min(100%,390px);min-height:62px;padding:17px 28px;border-color:rgba(105,208,255,.8)!important;background:linear-gradient(135deg,#3cb8ef,#2374be)!important;color:#fff!important;box-shadow:0 14px 30px rgba(38,151,224,.35)!important;font-size:17px}.telegram-community-button:hover:not(:disabled){box-shadow:0 17px 35px rgba(54,174,248,.48)!important}.telegram-final-action{margin-top:13px}
+
+/* A small line of copy completes the successful Bolt Food result action. */
+.proud-action{align-items:center}.proud-action span{color:#e6edf5;font-size:15px;font-style:italic;font-weight:700}
+.quiz-dialog{max-height:min(84vh,720px);overflow:auto}.quiz-overlay{z-index:20}
+
 /* The larger intro emblem must not inherit the green active-step disc. */
 .step.current .intro-icon,.step.complete .intro-icon{background:transparent!important;border:0!important;box-shadow:none}
 
