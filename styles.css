@@ -41,3 +41,5 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .bolt-icon img{width:59px;height:59px}
 .calendar-payment-icon>span:first-child{font-size:31px;line-height:1}
 .calendar-payment-icon img{display:block;width:52px;height:46px;object-fit:contain;filter:drop-shadow(0 0 7px rgba(44,183,255,.24))}
+.playlist-player{position:relative;overflow:hidden;aspect-ratio:16/9;margin:25px 0 0;border:1px solid rgba(178,153,228,.32);border-radius:18px;background:#090d17;box-shadow:0 18px 38px rgba(0,0,0,.3)}
+.playlist-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
