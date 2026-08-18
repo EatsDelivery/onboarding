@@ -46,3 +46,11 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* The larger intro emblem must not inherit the green active-step disc. */
 .step.current .intro-icon,.step.complete .intro-icon{background:transparent!important;border:0!important;box-shadow:none}
+
+/* Custom artwork stays free of the generic green status disc. */
+.step.current .bolt-icon,.step.complete .bolt-icon,.step.current .registration-icon,.step.complete .registration-icon,.step.current .telegram-icon,.step.complete .telegram-icon,.step.current .calendar-payment-icon,.step.complete .calendar-payment-icon{background:transparent!important;border:0!important}
+
+/* The active stage is emphasized by its artwork, rather than a background circle. */
+.step{position:relative}
+.step-icon{transform:scale(1);transform-origin:center;transition:transform .28s ease,filter .28s ease}
+.step.current .step-icon{transform:scale(1.5);z-index:2}
