@@ -107,5 +107,5 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 @media(max-width:560px){.stepper{margin:-16px 0 24px}}
 
 /* The approved GPT composition is used as one cohesive header artwork. */
-.site-title{margin:0 0 24px;padding:0}.site-title .header-art{position:relative;z-index:1;display:block;width:min(100%,596px);height:auto;filter:drop-shadow(0 9px 17px rgba(0,0,0,.32))}
+.site-title{margin:0 0 24px;padding:0}.site-title .header-art{position:relative;z-index:1;display:block;width:min(100%,680px);height:auto;filter:drop-shadow(0 9px 17px rgba(0,0,0,.32))}
 @media(max-width:560px){.site-title{margin-bottom:20px}.site-title .header-art{width:100%;height:auto}.stepper{margin:0 0 24px}}
