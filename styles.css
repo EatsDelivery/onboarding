@@ -56,3 +56,9 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .step{position:relative}
 .step-icon{transform:scale(1);transform-origin:center;transition:transform .28s ease,filter .28s ease}
 .step.current .step-icon{transform:scale(1.5);z-index:2}
+
+/* Keep the detailed Eats Delivery mark compact, including on the active step. */
+.intro-icon{width:48px;height:48px}
+.intro-icon img{width:46px;height:46px}
+.step.current .intro-icon{transform:scale(1)}
+@media(max-width:780px){.intro-icon{width:43px;height:43px}.intro-icon img{width:41px;height:41px}}
