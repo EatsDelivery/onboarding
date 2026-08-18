@@ -54,7 +54,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* The active stage is emphasized by its artwork, rather than a background circle. */
 .step{position:relative}
-.step-icon{transform:scale(1);transform-origin:center;transition:transform .28s ease,filter .28s ease}
+.step-icon{align-self:center;justify-self:center;transform:scale(1);transform-origin:center center;transition:transform .28s ease,filter .28s ease}
+.step-icon>img{align-self:center;justify-self:center;margin:auto}
 .step.current .step-icon{transform:scale(1.5);z-index:2}
 
 /* Keep the detailed Eats Delivery mark compact, including on the active step. */
@@ -64,8 +65,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 @media(max-width:780px){.intro-icon{width:43px;height:43px}.intro-icon img{width:41px;height:41px}}
 
 /* The wider Bolt artwork needs a slight optical correction within the stepper. */
-.bolt-icon{transform:translateX(-6px) scale(1)}
-.step.current .bolt-icon{transform:translateX(-6px) scale(1.5)}
+.bolt-icon{transform:translate(-6px,-4px) scale(1)}
+.step.current .bolt-icon{transform:translate(-6px,-4px) scale(1.5)}
 
 /* Reserve vertical room for enlarged mobile step icons inside the scroll area. */
 @media(max-width:780px){.stepper{padding:26px 18px 28px}}
