@@ -17,8 +17,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .button.secondary{border-color:rgba(185,203,228,.2);background:rgba(40,53,75,.92);color:#f3f6fa;box-shadow:none}
 .button:hover:not(:disabled){filter:brightness(1.06);box-shadow:0 12px 28px rgba(21,197,137,.3)}
 .resume-dialog{background:linear-gradient(145deg,rgba(26,39,59,.98),rgba(13,21,35,.97));backdrop-filter:blur(18px)}
-.site-title{display:flex;align-items:center;justify-content:center;gap:16px;margin:4px 0 30px;text-align:center;color:#f6f8fc;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.04em;text-wrap:balance;text-shadow:0 4px 22px rgba(0,0,0,.48)}
-.site-title img{display:block;width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 7px 13px rgba(0,0,0,.35))}
+.site-title{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;margin:0 0 28px;text-align:center;color:#f6f8fc;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.04em;text-wrap:balance;text-shadow:0 4px 22px rgba(0,0,0,.48)}
+.site-title img{display:block;width:144px;height:144px;object-fit:contain;filter:drop-shadow(0 9px 17px rgba(0,0,0,.42))}
 
 /* Quiz cards: the prompt forms a connected header for its answers. */
 .question{margin:0 0 30px;padding:0;border:0;background:transparent}
@@ -94,4 +94,4 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
   .step.current .bolt-icon{transform:translate(-14px,-4px) scale(1.5)}
 }
 
-@media(max-width:560px){.site-title{flex-direction:column;gap:5px;margin-bottom:24px;font-size:clamp(23px,7vw,30px);line-height:1.16}.site-title img{width:64px;height:64px}.site-title span{display:block;max-width:350px}}
+@media(max-width:560px){.site-title{gap:5px;margin-bottom:24px;font-size:clamp(23px,7vw,30px);line-height:1.16}.site-title img{width:148px;height:148px}.site-title span{display:block;max-width:350px}}
