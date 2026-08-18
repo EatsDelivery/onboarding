@@ -56,6 +56,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 /* A small line of copy completes the successful Bolt Food result action. */
 .proud-action{align-items:center}.proud-action span{color:#e6edf5;font-size:15px;font-style:italic;font-weight:700}
 .quiz-dialog{max-height:min(84vh,720px);overflow:auto}.quiz-overlay{z-index:20}
+.quiz-rules{margin:0 0 18px;padding-left:22px;color:#dce6f2;line-height:1.75}.quiz-rules li{padding-left:3px}
 
 /* The larger intro emblem must not inherit the green active-step disc. */
 .step.current .intro-icon,.step.complete .intro-icon{background:transparent!important;border:0!important;box-shadow:none}
