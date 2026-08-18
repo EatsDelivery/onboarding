@@ -66,3 +66,6 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 /* The wider Bolt artwork needs a slight optical correction within the stepper. */
 .bolt-icon{transform:translateX(-6px) scale(1)}
 .step.current .bolt-icon{transform:translateX(-6px) scale(1.5)}
+
+/* Reserve vertical room for enlarged mobile step icons inside the scroll area. */
+@media(max-width:780px){.stepper{padding:26px 18px 28px}}
