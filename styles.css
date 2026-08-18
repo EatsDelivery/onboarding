@@ -79,4 +79,5 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
   .stepper>.step:nth-child(7){grid-column:2;grid-row:2}.stepper>.step:nth-child(9){grid-column:4;grid-row:2}
   .stepper>.step-connector{width:100%;min-width:0;max-width:none;margin:0;grid-row:1}
   .stepper>.step-connector:nth-child(2){grid-column:2}.stepper>.step-connector:nth-child(4){grid-column:4}.stepper>.step-connector:nth-child(6){display:none}.stepper>.step-connector:nth-child(8){grid-column:3;grid-row:2}
+  .step.current .bolt-icon{transform:translate(-14px,-4px) scale(1.5)}
 }
