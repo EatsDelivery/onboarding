@@ -95,3 +95,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 }
 
 @media(max-width:560px){.site-title{gap:5px;margin-bottom:24px;font-size:clamp(23px,7vw,30px);line-height:1.16}.site-title img{width:148px;height:148px}.site-title span{display:block;max-width:350px}}
+
+/* Registration artwork has the same visual scale as the other custom step marks. */
+.registration-icon img{width:51px;height:51px}
+@media(max-width:780px){.registration-icon img{width:47px;height:47px}}
