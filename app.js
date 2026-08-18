@@ -2,7 +2,7 @@ const links = {
   boltGuide: 'https://www.youtube.com/playlist?list=PLQFx_vtbR0SioPtXeXO2j8aAPaUb3TOYU',
   calendar: 'https://youtu.be/iBThwch_Tn0',
   registration: 'https://controlfleet.ro/onboarding/participatiune/5b2df208d1b9a87844e7fe9508fea2d572d6d9ac503bd2382213a0416f52bb32',
-  telegramGuide: 'https://youtube.com/playlist?list=PLLEIvJ6LBUOs&si=ta1luiGVtKbF4YIk',
+  telegramGuide: 'https://www.youtube.com/playlist?list=PLLEIvJ6LBUOs',
   telegram: 'https://t.me/eatsdelivery_bot?start=onboarding'
 };
 // Activăm timerele înainte de lansarea finală.
@@ -35,7 +35,7 @@ const calendarQuestions = [
 ];
 
 const blank = { screen:'welcome', boltUntil:null, retryUntil:null, boltSet:null, calendarUntil:null, registrationVisited:false, telegramUntil:null };
-function playlistPlayer(id,title){return `<div class="playlist-player"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=${id}" title="${title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`}
+function playlistPlayer(id,title){return `<div class="playlist-player"><iframe src="https://www.youtube.com/embed/videoseries?list=${id}" title="${title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`}
 function videoPlayer(id,title){return `<div class="playlist-player"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`}
 const savedSession = JSON.parse(localStorage.getItem('eats-onboarding-v1') || 'null');
 let state = { ...blank };
