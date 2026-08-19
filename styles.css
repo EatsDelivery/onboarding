@@ -109,3 +109,18 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 /* The approved GPT composition is used as one cohesive header artwork. */
 .site-title{margin:0 0 24px;padding:0}.site-title .header-art{position:relative;z-index:1;display:block;width:min(100%,560px);height:auto;filter:drop-shadow(0 9px 17px rgba(0,0,0,.32))}
 @media(max-width:560px){.site-title{margin-bottom:12px}.site-title>img.header-art{width:100%!important;height:auto!important}.stepper{margin:0 0 14px;padding-top:14px;padding-bottom:16px;row-gap:22px}}
+
+/* Equipment joins the custom-artwork family without the generic status disc. */
+.equipment-icon,.step.current .equipment-icon,.step.complete .equipment-icon{background:transparent!important;border:0!important;filter:none}
+.equipment-icon img{display:block;width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 0 7px rgba(90,231,169,.18))}
+.card a:not(.button){color:#77ebc0;font-weight:700;text-decoration-color:rgba(119,235,192,.55);text-underline-offset:3px}
+.equipment-list{margin:0 0 18px;padding-left:24px;color:#dce6f2;line-height:1.8}
+.equipment-notice{border-color:rgba(105,224,178,.45);background:rgba(22,65,52,.64)}
+@media(max-width:780px){
+  .equipment-icon img{width:47px;height:47px}
+  .stepper>.step:nth-child(7){grid-column:1;grid-row:2}
+  .stepper>.step:nth-child(9){grid-column:3;grid-row:2}
+  .stepper>.step:nth-child(11){grid-column:5;grid-row:2}
+  .stepper>.step-connector:nth-child(8){grid-column:2;grid-row:2}
+  .stepper>.step-connector:nth-child(10){grid-column:4;grid-row:2}
+}
