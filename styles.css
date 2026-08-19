@@ -127,12 +127,11 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* Low-key sticker field: it stays behind the onboarding content and remains desktop-only. */
 .ambient-stickers{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.ambient-sticker{position:absolute;display:block;left:max(10px,calc(50% - 700px));width:clamp(170px,19vw,290px);height:clamp(52px,5.9vw,90px);overflow:hidden;opacity:.27;filter:brightness(.72) saturate(.76) blur(.25px);mix-blend-mode:screen;transform:rotate(var(--turn));transform-origin:center;mask-image:linear-gradient(90deg,transparent 0%,#000 8%,#000 92%,transparent 100%)}
-.ambient-sticker.right{right:max(10px,calc(50% - 700px));left:auto}
-.ambient-sticker img{display:block;width:100%;height:auto;transform:translateY(var(--offset))}
+.ambient-sticker{position:absolute;display:block;left:max(28px,calc(50% - 900px));width:var(--size,250px);height:auto;opacity:.46;filter:brightness(.9) saturate(.88) contrast(.95);mix-blend-mode:screen;transform:rotate(var(--turn));transform-origin:center}
+.ambient-sticker.right{right:max(28px,calc(50% - 900px));left:auto}
 .left{--turn:-4deg}.right{--turn:4deg}
-.sticker-c1{top:1%;--offset:-1%;--turn:-5deg}.sticker-a3{top:15%;--offset:-36%;--turn:3deg}.sticker-b2{top:28%;--offset:-21%;--turn:-4deg}.sticker-c4{top:40%;--offset:-54%;--turn:5deg}.sticker-a1{top:52%;--offset:-1%;--turn:-3deg}.sticker-b4{top:65%;--offset:-59%;--turn:4deg}.sticker-c6{top:77%;--offset:-86%;--turn:-5deg}.sticker-a5{top:89%;--offset:-67%;--turn:3deg}
-.sticker-b5{top:1%;--offset:-78%;--turn:5deg}.sticker-c2{top:15%;--offset:-19%;--turn:-4deg}.sticker-a2{top:28%;--offset:-20%;--turn:3deg}.sticker-b1{top:40%;--offset:-1%;--turn:-5deg}.sticker-c3{top:52%;--offset:-36%;--turn:4deg}.sticker-a4{top:65%;--offset:-52%;--turn:-3deg}.sticker-b3{top:77%;--offset:-40%;--turn:5deg}.sticker-c5{top:89%;--offset:-72%;--turn:-4deg}
+.sticker-c1{top:3%;--size:245px;--turn:-5deg}.sticker-a3{top:15%;--size:224px;--turn:3deg}.sticker-b2{top:27%;--size:265px;--turn:-4deg}.sticker-c4{top:43%;--size:208px;--turn:5deg}.sticker-a1{top:57%;--size:242px;--turn:-3deg}.sticker-b4{top:70%;--size:274px;--turn:4deg}.sticker-c6{top:84%;--size:212px;--turn:-5deg}.sticker-a5{top:95%;--size:246px;--turn:3deg}
+.sticker-b5{top:3%;--size:268px;--turn:5deg}.sticker-c2{top:15%;--size:228px;--turn:-4deg}.sticker-a2{top:27%;--size:252px;--turn:3deg}.sticker-b1{top:43%;--size:238px;--turn:-5deg}.sticker-c3{top:57%;--size:266px;--turn:4deg}.sticker-a4{top:70%;--size:220px;--turn:-3deg}.sticker-b3{top:84%;--size:270px;--turn:5deg}.sticker-c5{top:95%;--size:210px;--turn:-4deg}
 /* A slightly deeper outline gives the content panel the same polished contrast as the visual study. */
 .card{border-color:rgba(100,178,255,.27);box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(178,221,255,.06)}
-@media(max-width:1079px){.ambient-stickers{display:none}}
+@media(max-width:1279px){.ambient-stickers{display:none}}
