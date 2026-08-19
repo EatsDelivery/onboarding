@@ -135,3 +135,9 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 /* A slightly deeper outline gives the content panel the same polished contrast as the visual study. */
 .card{border-color:rgba(100,178,255,.27);box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(178,221,255,.06)}
 @media(max-width:1279px){.ambient-stickers{display:none}}
+
+/* The primary onboarding panel borrows the deeper blue glass and luminous rim from the approved study. */
+.card{background:linear-gradient(145deg,rgba(12,29,54,.97),rgba(5,13,31,.96));border-color:rgba(69,148,255,.5);box-shadow:0 0 0 1px rgba(54,135,255,.07),0 26px 74px rgba(0,0,0,.48),inset 0 1px 0 rgba(184,226,255,.1)}
+.welcome-content .button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-width:236px}
+.button-arrow{font-size:23px;font-weight:500;line-height:0;transition:transform .18s ease}
+.welcome-content .button:hover .button-arrow{transform:translateX(4px)}
