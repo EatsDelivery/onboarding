@@ -133,3 +133,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .welcome-content .button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-width:236px}
 .button-arrow{font-size:23px;font-weight:500;line-height:0;transition:transform .18s ease}
 .welcome-content .button:hover .button-arrow{transform:translateX(4px)}
+
+/* The final navigation step represents the wider community, not only Telegram. */
+.telegram-icon img{width:49px;height:49px;object-fit:contain}
+@media(max-width:780px){.telegram-icon img{width:46px;height:46px}}
