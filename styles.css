@@ -127,7 +127,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* Low-key sticker field: it stays behind the onboarding content and remains desktop-only. */
 .ambient-stickers{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.ambient-sticker{position:absolute;display:block;left:max(28px,calc(50% - 900px));width:var(--size,250px);height:auto;opacity:.46;filter:brightness(.9) saturate(.88) contrast(.95);mix-blend-mode:screen;transform:rotate(var(--turn));transform-origin:center}
+.ambient-sticker{position:absolute;display:block;left:max(28px,calc(50% - 900px));width:var(--size,250px);height:auto;opacity:.68;filter:brightness(.94) saturate(.92) contrast(.98);mix-blend-mode:screen;transform:rotate(var(--turn));transform-origin:center}
 .ambient-sticker.right{right:max(28px,calc(50% - 900px));left:auto}
 .left{--turn:-4deg}.right{--turn:4deg}
 .sticker-c1{top:3%;--size:245px;--turn:-5deg}.sticker-a3{top:15%;--size:224px;--turn:3deg}.sticker-b2{top:27%;--size:265px;--turn:-4deg}.sticker-c4{top:43%;--size:208px;--turn:5deg}.sticker-a1{top:57%;--size:242px;--turn:-3deg}.sticker-b4{top:70%;--size:274px;--turn:4deg}.sticker-c6{top:84%;--size:212px;--turn:-5deg}.sticker-a5{top:95%;--size:246px;--turn:3deg}
