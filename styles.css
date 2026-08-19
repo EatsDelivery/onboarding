@@ -141,3 +141,9 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .welcome-content .button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-width:236px}
 .button-arrow{font-size:23px;font-weight:500;line-height:0;transition:transform .18s ease}
 .welcome-content .button:hover .button-arrow{transform:translateX(4px)}
+
+/* Scatter the individual stickers across the side zones instead of keeping them in rigid columns. */
+@media(min-width:1440px){
+  .sticker-c1{left:30px;top:2%}.sticker-a3{left:76px;top:13%}.sticker-b2{left:18px;top:29%}.sticker-c4{left:116px;top:46%}.sticker-a1{left:48px;top:59%}.sticker-b4{left:132px;top:73%}.sticker-c6{left:12px;top:88%}.sticker-a5{left:92px;top:101%}
+  .sticker-b5{right:26px;top:3%}.sticker-c2{right:106px;top:16%}.sticker-a2{right:14px;top:28%}.sticker-b1{right:120px;top:44%}.sticker-c3{right:44px;top:61%}.sticker-a4{right:138px;top:76%}.sticker-b3{right:20px;top:90%}.sticker-c5{right:96px;top:104%}
+}
