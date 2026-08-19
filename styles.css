@@ -125,25 +125,11 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
   .stepper>.step-connector:nth-child(10){grid-column:4;grid-row:2}
 }
 
-/* Low-key sticker field: it stays behind the onboarding content and remains desktop-only. */
-.ambient-stickers{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.ambient-sticker{position:absolute;display:block;left:max(28px,calc(50% - 900px));width:var(--size,250px);height:auto;opacity:.85;filter:brightness(.94) saturate(.92) contrast(.98);mix-blend-mode:screen;transform:rotate(var(--turn));transform-origin:center}
-.ambient-sticker.right{right:max(28px,calc(50% - 900px));left:auto}
-.left{--turn:-4deg}.right{--turn:4deg}
-.sticker-c1{top:3%;--size:245px;--turn:-5deg}.sticker-a3{top:15%;--size:224px;--turn:3deg}.sticker-b2{top:27%;--size:265px;--turn:-4deg}.sticker-c4{top:43%;--size:208px;--turn:5deg}.sticker-a1{top:57%;--size:242px;--turn:-3deg}.sticker-b4{top:70%;--size:274px;--turn:4deg}.sticker-c6{top:84%;--size:212px;--turn:-5deg}.sticker-a5{top:95%;--size:246px;--turn:3deg}
-.sticker-b5{top:3%;--size:268px;--turn:5deg}.sticker-c2{top:15%;--size:228px;--turn:-4deg}.sticker-a2{top:27%;--size:252px;--turn:3deg}.sticker-b1{top:43%;--size:238px;--turn:-5deg}.sticker-c3{top:57%;--size:266px;--turn:4deg}.sticker-a4{top:70%;--size:220px;--turn:-3deg}.sticker-b3{top:84%;--size:270px;--turn:5deg}.sticker-c5{top:95%;--size:210px;--turn:-4deg}
 /* A slightly deeper outline gives the content panel the same polished contrast as the visual study. */
 .card{border-color:rgba(100,178,255,.27);box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(178,221,255,.06)}
-@media(max-width:1279px){.ambient-stickers{display:none}}
 
 /* The primary onboarding panel borrows the deeper blue glass and luminous rim from the approved study. */
 .card{background:linear-gradient(145deg,rgba(12,29,54,.97),rgba(5,13,31,.96));border-color:rgba(69,148,255,.5);box-shadow:0 0 0 1px rgba(54,135,255,.07),0 26px 74px rgba(0,0,0,.48),inset 0 1px 0 rgba(184,226,255,.1)}
 .welcome-content .button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-width:236px}
 .button-arrow{font-size:23px;font-weight:500;line-height:0;transition:transform .18s ease}
 .welcome-content .button:hover .button-arrow{transform:translateX(4px)}
-
-/* Scatter the individual stickers across the side zones instead of keeping them in rigid columns. */
-@media(min-width:1440px){
-  .sticker-c1{left:30px;top:2%}.sticker-a3{left:76px;top:13%}.sticker-b2{left:18px;top:29%}.sticker-c4{left:116px;top:46%}.sticker-a1{left:48px;top:59%}.sticker-b4{left:132px;top:73%}.sticker-c6{left:12px;top:88%}.sticker-a5{left:92px;top:101%}
-  .sticker-b5{right:26px;top:3%}.sticker-c2{right:106px;top:16%}.sticker-a2{right:14px;top:28%}.sticker-b1{right:120px;top:44%}.sticker-c3{right:44px;top:61%}.sticker-a4{right:138px;top:76%}.sticker-b3{right:20px;top:90%}.sticker-c5{right:96px;top:104%}
-}
