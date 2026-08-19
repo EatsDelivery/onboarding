@@ -35,11 +35,11 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 
 /* Let the calendar and Telegram marks dissolve softly into the dark stepper. */
 .calendar-payment-icon,.step.current .calendar-payment-icon,.step.complete .calendar-payment-icon{border:0;background:transparent}
-.telegram-icon img{filter:drop-shadow(0 0 8px rgba(55,178,255,.3));-webkit-mask-image:radial-gradient(circle,#000 45%,rgba(0,0,0,.84) 62%,transparent 82%);mask-image:radial-gradient(circle,#000 45%,rgba(0,0,0,.84) 62%,transparent 82%)}
+.telegram-icon img{filter:drop-shadow(0 0 8px rgba(55,178,255,.3))}
 
 /* Match the visual weight of the three platform icons. */
 .bolt-icon img{width:59px;height:59px}
-.calendar-payment-icon img{display:block;width:52px;height:46px;object-fit:contain;filter:drop-shadow(0 0 7px rgba(44,183,255,.24))}
+.calendar-payment-icon img{display:block;width:60px;height:54px;object-fit:contain;filter:drop-shadow(0 0 7px rgba(44,183,255,.24))}
 .playlist-player{position:relative;overflow:hidden;aspect-ratio:16/9;margin:25px 0 0;border:1px solid rgba(178,153,228,.32);border-radius:18px;background:#090d17;box-shadow:0 18px 38px rgba(0,0,0,.3)}
 .playlist-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .telegram-guides,.guide-followup{margin-top:25px;padding:22px;border:1px solid rgba(178,153,228,.28);border-radius:18px;background:linear-gradient(145deg,rgba(30,26,53,.76),rgba(13,20,36,.84))}
@@ -129,5 +129,5 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .welcome-content .button:hover .button-arrow{transform:translateX(4px)}
 
 /* The final navigation step represents the wider community, not only Telegram. */
-.telegram-icon img{width:49px;height:49px;object-fit:contain}
-@media(max-width:780px){.telegram-icon img{width:46px;height:46px}}
+.telegram-icon img{width:58px;height:58px;object-fit:contain}
+@media(max-width:780px){.telegram-icon img{width:54px;height:54px}.calendar-payment-icon img{width:55px;height:50px}}
