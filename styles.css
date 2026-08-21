@@ -109,6 +109,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .equipment-icon img{display:block;width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 0 7px rgba(90,231,169,.18))}
 .card a:not(.button){color:#77ebc0;font-weight:700;text-decoration-color:rgba(119,235,192,.55);text-underline-offset:3px}
 .equipment-list{margin:0 0 18px;padding-left:24px;color:#dce6f2;line-height:1.8}
+.notice{text-align:center}
 .equipment-notice{border-color:rgba(105,224,178,.45);background:rgba(22,65,52,.64)}
 @media(max-width:780px){
   .equipment-icon img{width:47px;height:47px}
