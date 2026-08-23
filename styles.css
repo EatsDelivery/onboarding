@@ -210,3 +210,7 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
   body::before{background-position:center top;background-size:auto 100%}
   body::after{background:linear-gradient(180deg,rgba(3,8,16,.28),rgba(3,8,16,.58))}
 }
+
+/* Secondary line in the Bolt quiz introduction: intentionally quieter than the rules. */
+.quiz-success{margin:4px 0 7px!important;color:#f4db94!important;font-weight:700}
+.quiz-prompt-note{margin:0!important;padding:11px 14px;border-left:2px solid rgba(229,186,76,.7);border-radius:0 10px 10px 0;background:rgba(235,191,89,.08);color:#d3c49d!important;font-size:14px!important;line-height:1.5!important}
