@@ -184,3 +184,21 @@ footer{color:#b6a77e}
 /* Final card treatment: solid blue-navy fill and a single fine gold stroke only. */
 .card{border:1px solid rgba(228,184,79,.9)!important;background:linear-gradient(145deg,#0c2944 0%,#071b31 56%,#061426 100%)!important;box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(189,225,255,.1)!important}
 .card::before{display:none!important}
+
+/* Shared editorial type: prompt copy now matches the classic serif used by the
+   benefits panel and by the progress labels, while retaining a clear hierarchy. */
+#app.card,.resume-dialog{font-family:Georgia,"Times New Roman",serif}
+#app.card h1,.resume-dialog h2{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-.025em;line-height:1.14}
+#app.card h1{font-size:clamp(29px,4.1vw,43px);margin-bottom:20px}
+#app.card h2{font-size:clamp(22px,3vw,29px);font-weight:700}
+#app.card p,.resume-dialog p{font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.7;letter-spacing:.002em}
+#app.card .eyebrow{font-family:Georgia,"Times New Roman",serif;font-size:13px;font-weight:700;letter-spacing:.11em}
+#app.card .notice,.resume-dialog .notice{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.55}
+#app.card .question legend,#app.card .option,#app.card .answer-note,#app.card .result{font-family:Georgia,"Times New Roman",serif}
+#app.card .question legend{font-size:17px;line-height:1.48}
+#app.card .option{font-size:16px;line-height:1.48}
+#app.card .button,.resume-dialog .button{font-family:Georgia,"Times New Roman",serif;font-size:16px;font-weight:700;letter-spacing:.01em}
+@media(max-width:480px){
+  #app.card p,.resume-dialog p{font-size:16px;line-height:1.66}
+  #app.card h1{font-size:clamp(28px,8.4vw,37px)}
+}
