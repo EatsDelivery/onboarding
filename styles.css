@@ -142,6 +142,18 @@ footer{color:#b6a77e}
 .card{position:relative;isolation:isolate;border:0!important;background:linear-gradient(145deg,rgba(13,28,45,.96),rgba(5,15,28,.97))!important}
 .card::before{content:"";position:absolute;z-index:-1;inset:-2px;border-radius:inherit;background:linear-gradient(135deg,#5a350b 0%,#d39a2d 24%,#fff0ab 49%,#bf7d1d 72%,#4b2b09 100%);box-shadow:0 0 0 1px rgba(102,61,12,.78),0 0 18px rgba(221,168,47,.2),inset 0 1px 0 rgba(255,246,203,.65)}
 
+/* A compact, gold-on-navy progress header inspired by the CibeRO composition. */
+.cibero-stepper{display:flex;align-items:flex-start;justify-content:center;min-width:0;margin:0 0 28px;padding:0 8px;overflow:visible}
+.cibero-stepper>.step{display:flex;flex:0 0 auto;flex-direction:column;align-items:center;gap:7px;width:auto;color:#c3ad7a;font-family:Georgia,"Times New Roman",serif;font-size:13px;font-weight:600;line-height:1.15;white-space:nowrap}
+.cibero-stepper .step-label{display:block}
+.cibero-stepper .progress-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(226,182,76,.83)!important;border-radius:50%;background:radial-gradient(circle at 35% 28%,rgba(255,239,166,.2),rgba(48,30,9,.9) 68%)!important;color:#eac46a;filter:drop-shadow(0 0 8px rgba(220,169,53,.24));transform:none!important}
+.cibero-stepper .progress-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.cibero-stepper>.step.current{color:#f7d475}.cibero-stepper>.step.current .progress-icon{color:#fff0a6;border-color:#ffe28a!important;background:radial-gradient(circle at 35% 28%,rgba(255,244,181,.48),rgba(102,63,13,.95) 70%)!important;filter:drop-shadow(0 0 12px rgba(248,195,63,.6));transform:scale(1.06)!important}
+.cibero-stepper>.step.complete{color:#e9d7a8}.cibero-stepper>.step.complete .progress-icon{color:#f3cc6e;border-color:rgba(222,174,64,.76)!important;background:radial-gradient(circle at 35% 28%,rgba(241,208,122,.24),rgba(56,35,10,.9) 70%)!important}
+.cibero-stepper>.step-connector{align-self:flex-start;flex:1 1 46px;min-width:28px;max-width:76px;height:1px;margin:24px 9px 0;background:linear-gradient(90deg,transparent,rgba(211,163,64,.72),transparent)}
+.cibero-stepper>.step-connector::after{content:"✦";display:block;margin-top:-9px;text-align:center;color:rgba(235,191,84,.72);font-size:10px}
+@media(max-width:780px){.cibero-stepper{display:grid;grid-template-columns:1fr 46px 1fr 46px 1fr;grid-template-rows:auto auto;row-gap:22px;margin:0 0 20px;padding:8px 0 16px}.cibero-stepper>.step{width:auto;grid-row:1;font-size:11px}.cibero-stepper>.step:nth-child(1){grid-column:1}.cibero-stepper>.step:nth-child(3){grid-column:3}.cibero-stepper>.step:nth-child(5){grid-column:5}.cibero-stepper>.step:nth-child(7){grid-column:1;grid-row:2}.cibero-stepper>.step:nth-child(9){grid-column:3;grid-row:2}.cibero-stepper>.step:nth-child(11){grid-column:5;grid-row:2}.cibero-stepper>.step-connector{align-self:start;width:100%;min-width:0;max-width:none;margin:24px 0 0;grid-row:1}.cibero-stepper>.step-connector:nth-child(2){grid-column:2}.cibero-stepper>.step-connector:nth-child(4){grid-column:4}.cibero-stepper>.step-connector:nth-child(6),.cibero-stepper>.step-connector:nth-child(8),.cibero-stepper>.step-connector:nth-child(10){display:none}.cibero-stepper .progress-icon{width:42px;height:42px}.cibero-stepper .progress-icon svg{width:20px;height:20px}}
+
 /* A slightly deeper outline gives the content panel the same polished contrast as the visual study. */
 .card{border-color:rgba(100,178,255,.27);box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(178,221,255,.06)}
 
