@@ -202,3 +202,11 @@ footer{color:#b6a77e}
   #app.card p,.resume-dialog p{font-size:16px;line-height:1.66}
   #app.card h1{font-size:clamp(28px,8.4vw,37px)}
 }
+
+/* Subtle CibeRO-style filigree replaces the former photographic backdrop. */
+body::before{inset:0;background:url("assets/onboarding-ornamental-background.png") center/cover no-repeat;filter:none;transform:none;opacity:1}
+body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))}
+@media(max-width:780px){
+  body::before{background-position:center top;background-size:auto 100%}
+  body::after{background:linear-gradient(180deg,rgba(3,8,16,.28),rgba(3,8,16,.58))}
+}
