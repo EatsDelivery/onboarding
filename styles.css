@@ -120,6 +120,24 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
   .stepper>.step-connector:nth-child(10){grid-column:4;grid-row:2}
 }
 
+/* CibeRO visual language: antique-gold gradients, deep navy glass and restrained teal. */
+:root{--accent:#e8bf59;--accent-dark:#32200c;--line:#795625;--gold-deep:#5e3a0e;--gold:#d9a83e;--gold-light:#f7dfa0;--ink:#081220}
+body{background:radial-gradient(circle at 50% 2%,rgba(48,34,13,.28),transparent 25rem),#060b14}
+body::after{background:linear-gradient(180deg,rgba(3,8,16,.66),rgba(4,8,17,.93))}
+.card{border:1px solid transparent;background:linear-gradient(145deg,rgba(13,28,45,.96),rgba(5,15,28,.97)) padding-box,linear-gradient(135deg,rgba(95,57,12,.9),var(--gold-light),var(--gold),rgba(74,43,8,.95)) border-box;box-shadow:0 25px 74px rgba(0,0,0,.48),inset 0 1px 0 rgba(255,235,178,.1)}
+.card h1{color:#fff3cf;text-shadow:0 2px 16px rgba(185,126,31,.13)}
+.eyebrow{color:#f1ce74;text-shadow:0 1px 12px rgba(225,176,68,.25)}
+.button{border-color:rgba(248,220,137,.78);background:linear-gradient(135deg,#5c360d 0%,#a56b1b 34%,#f1ca68 61%,#875115 100%);color:#191008;box-shadow:0 10px 25px rgba(135,82,17,.38),inset 0 1px 0 rgba(255,244,193,.52);text-shadow:0 1px 0 rgba(255,245,196,.24)}
+.button:hover:not(:disabled){box-shadow:0 13px 31px rgba(185,123,28,.48),inset 0 1px 0 rgba(255,249,214,.66)}
+.button.secondary{border-color:rgba(223,185,99,.42);background:linear-gradient(145deg,rgba(48,38,28,.94),rgba(28,34,48,.96));color:#f7ebca;box-shadow:inset 0 1px 0 rgba(255,235,177,.08)}
+.step{color:#9e946f}.step.current{color:#f5d47c}.step.complete{color:#e9dbb7}.step-connector{background:linear-gradient(90deg,rgba(93,62,19,.55),rgba(216,169,60,.66),rgba(93,62,19,.55))}.step-connector.complete{background:linear-gradient(90deg,#8a5a17,#f0c763,#a86f1d)}.step.current .step-icon{background:#24190c;color:#f6d77c;border-color:#e6bd57}.step.complete .step-icon{background:#3b2b12;color:#f2d27a}
+.notice{border-color:rgba(233,191,89,.55);background:linear-gradient(135deg,rgba(81,55,22,.73),rgba(19,35,49,.88));box-shadow:inset 0 1px 0 rgba(255,238,186,.1)}.notice strong{color:#fff0c9}
+.question legend{border-color:rgba(232,191,89,.68);background:linear-gradient(125deg,rgba(94,60,15,.96),rgba(28,47,53,.98));box-shadow:0 -8px 22px rgba(218,164,46,.12)}.question legend::before{color:#f8d87c}.question .options{border-color:rgba(229,190,100,.32);background:linear-gradient(145deg,rgba(33,43,56,.97),rgba(14,26,41,.98))}
+.playlist-player{border-color:rgba(223,183,89,.42);box-shadow:0 18px 38px rgba(0,0,0,.32),0 0 0 1px rgba(244,214,135,.05)}
+.result{border-color:#d8aa47;background:linear-gradient(145deg,#273d34,#142b29)}.result.fail{border-color:#b97252}
+.resume-dialog{border-color:rgba(236,199,112,.38);background:linear-gradient(145deg,rgba(45,40,29,.98),rgba(12,23,37,.98));box-shadow:0 24px 70px rgba(0,0,0,.52),inset 0 1px 0 rgba(255,233,169,.08)}
+footer{color:#b6a77e}
+
 /* A slightly deeper outline gives the content panel the same polished contrast as the visual study. */
 .card{border-color:rgba(100,178,255,.27);box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(178,221,255,.06)}
 
