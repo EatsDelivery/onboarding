@@ -180,3 +180,7 @@ footer{color:#b6a77e}
 /* The final navigation step represents the wider community, not only Telegram. */
 .telegram-icon img{width:58px;height:58px;object-fit:contain}
 @media(max-width:780px){.telegram-icon img{width:54px;height:54px}.calendar-payment-icon img{width:55px;height:50px}}
+
+/* Final card treatment: solid blue-navy fill and a single fine gold stroke only. */
+.card{border:1px solid rgba(228,184,79,.9)!important;background:linear-gradient(145deg,#0c2944 0%,#071b31 56%,#061426 100%)!important;box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(189,225,255,.1)!important}
+.card::before{display:none!important}
