@@ -138,6 +138,10 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.66),rgba(4,8,17,.93))
 .resume-dialog{border-color:rgba(236,199,112,.38);background:linear-gradient(145deg,rgba(45,40,29,.98),rgba(12,23,37,.98));box-shadow:0 24px 70px rgba(0,0,0,.52),inset 0 1px 0 rgba(255,233,169,.08)}
 footer{color:#b6a77e}
 
+/* A visible metallic frame around every onboarding prompt. */
+.card{position:relative;isolation:isolate;border:0!important;background:linear-gradient(145deg,rgba(13,28,45,.96),rgba(5,15,28,.97))!important}
+.card::before{content:"";position:absolute;z-index:-1;inset:-2px;border-radius:inherit;background:linear-gradient(135deg,#5a350b 0%,#d39a2d 24%,#fff0ab 49%,#bf7d1d 72%,#4b2b09 100%);box-shadow:0 0 0 1px rgba(102,61,12,.78),0 0 18px rgba(221,168,47,.2),inset 0 1px 0 rgba(255,246,203,.65)}
+
 /* A slightly deeper outline gives the content panel the same polished contrast as the visual study. */
 .card{border-color:rgba(100,178,255,.27);box-shadow:0 26px 74px rgba(0,0,0,.46),inset 0 1px 0 rgba(178,221,255,.06)}
 
