@@ -223,7 +223,7 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 .playlist-reveal{margin-top:2px}
 .calendar-reveal{margin-top:2px}.equipment-alert{display:flex;align-items:flex-start;justify-content:center;gap:10px}.equipment-alert span{display:grid;place-items:center;flex:0 0 auto;width:26px;height:26px;border:1px solid rgba(239,192,80,.72);border-radius:50%;background:rgba(106,65,13,.32);color:#ffe08b;font-family:Arial,sans-serif;font-size:16px;line-height:1}
 .registration-reveal{margin-top:2px}
-.welcome-guided-copy .guided-quote-line{padding:0;background:transparent;box-shadow:none}.welcome-guided-copy .guided-quote-line::before{display:none}.welcome-guided-copy .welcome-quote{margin:0!important;text-align:left}.welcome-guided-copy .guided-quote-line.is-current{background:transparent;box-shadow:none}
+.welcome-content .welcome-quote{margin:0!important;text-align:left}
 .button{background:linear-gradient(135deg,#bd7b22 0%,#ebba4d 32%,#ffe49a 60%,#cc8c2b 100%);box-shadow:0 10px 25px rgba(198,139,34,.42),inset 0 1px 0 rgba(255,250,216,.76);text-transform:uppercase}.continue-reading{text-transform:uppercase}.button:hover:not(:disabled){box-shadow:0 13px 31px rgba(220,161,48,.55),inset 0 1px 0 rgba(255,253,228,.85)}
 .telegram-guides .button.secondary,.telegram-community-button{background:linear-gradient(135deg,#bd7b22 0%,#ebba4d 32%,#ffe49a 60%,#cc8c2b 100%)!important;box-shadow:0 10px 25px rgba(198,139,34,.42),inset 0 1px 0 rgba(255,250,216,.76)!important}
 .button,.continue-reading{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.5)!important;text-transform:none}.telegram-guides .button.secondary,.telegram-community-button{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.5)!important}
