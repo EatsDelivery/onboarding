@@ -243,3 +243,7 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 
 /* A compact caution separates data accuracy from the larger registration-return reminder. */
 .registration-data-warning{display:flex;align-items:flex-start;gap:9px;margin:21px 0 0;padding:11px 13px;border-left:3px solid #e4aa39;border-radius:8px;background:rgba(119,76,13,.2);color:#f5d58d}.registration-data-warning>span{display:grid;place-items:center;flex:0 0 auto;width:20px;height:20px;margin-top:2px;border-radius:50%;background:#d99b2a;color:#16100a;font-family:Arial,sans-serif;font-size:13px;font-weight:800}.registration-data-warning p{margin:0!important;color:#f5dc9d!important;font-size:15px!important;font-weight:700;line-height:1.48!important}
+
+/* Supporting notes give every benefit helpful context without competing with its title. */
+.benefits-panel .benefit-note{display:block;margin-top:6px;color:#8fa1b4;font-family:Georgia,"Times New Roman",serif;font-size:11px;font-style:italic;line-height:1.38}
+@media(max-width:780px){.benefits-panel li:last-child{grid-column:auto}}
