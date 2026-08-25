@@ -236,3 +236,7 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 /* Seven clearly numbered stages, with a compact but readable header at every size. */
 .cibero-stepper>.step{font-size:12px}.cibero-stepper>.step-connector{min-width:20px;max-width:54px;margin-left:6px;margin-right:6px}
 @media(max-width:780px){.cibero-stepper{grid-template-rows:auto auto auto}.cibero-stepper>.step:nth-child(13){grid-column:3;grid-row:3}.cibero-stepper>.step-connector:nth-child(12){display:none}}
+
+/* The opening screen carries the overview, so its copy gets more visual weight. */
+.welcome-content .welcome-intro{font-size:20px;line-height:1.58}.welcome-next-steps{margin:22px 0 9px!important;color:#f0e2bd!important;font-family:Georgia,"Times New Roman",serif;font-size:19px!important;font-weight:700}.welcome-steps{display:grid;gap:9px;margin:0 0 22px;padding-left:24px;color:#dce5ef;font-size:18px;line-height:1.48}.welcome-steps li::marker{color:#e7be5b}.welcome-content .welcome-quote{font-size:16px!important;line-height:1.58!important}
+@media(max-width:560px){.welcome-content .welcome-intro{font-size:18px}.welcome-next-steps{font-size:18px!important}.welcome-steps{font-size:16px}}
