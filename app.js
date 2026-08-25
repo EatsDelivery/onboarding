@@ -62,6 +62,10 @@ function videoPlayer(id,title){return `<div class="playlist-player"><iframe src=
 const savedSession = JSON.parse(localStorage.getItem('eats-onboarding-v1') || 'null');
 let state = { ...blank };
 const app = document.querySelector('#app');
+const lockTooltip = document.createElement('div');
+lockTooltip.id = 'lock-tooltip';
+lockTooltip.setAttribute('role','status');
+document.body.append(lockTooltip);
 function save(){ localStorage.setItem('eats-onboarding-v1', JSON.stringify(state)); }
 function go(screen){ state.screen=screen; save(); render(); }
 function startFresh(){ state={ ...blank, freshStarted:true }; save(); render(); }
@@ -71,8 +75,9 @@ function time(ms){ const s=Math.ceil(ms/1000); return `${String(Math.floor(s/60)
 function lockedLabel(label, until){ if(!until || remaining(until)===0) return label; setTimeout(render, 1000); return `${label} · ${time(remaining(until))}`; }
 function setProgress(step){ document.querySelectorAll('.step').forEach((item,index)=>{ const current=index===step-1; item.classList.toggle('current',current); item.classList.toggle('complete',index<step-1); item.toggleAttribute('aria-current',current); }); document.querySelectorAll('.step-connector').forEach((line,index)=>line.classList.toggle('complete',index<step-1)); }
 function action(label, handler, secondary=false, disabled=false, danger=false, lockHint='Funcția va fi deblocată după ce bifezi căsuța de confirmare.'){const button=`<button class="button ${secondary?'secondary':''} ${danger?'danger':''}" ${disabled?'disabled':''} onclick="${handler}">${label}</button>`;return disabled?`<span class="button-lock" tabindex="0" data-lock-message="${lockHint}" onclick="showLockHint(this,event)" onmouseenter="moveLockHint(event,this)" onmousemove="moveLockHint(event,this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showLockHint(this,event)}">${button}</span>`:button;}
-function moveLockHint(event,element){if(!event||typeof event.clientX!=='number')return;const width=360;const x=Math.min(event.clientX+14,Math.max(8,window.innerWidth-width));const y=Math.min(event.clientY+16,Math.max(8,window.innerHeight-42));element.style.setProperty('--lock-hint-x',`${x}px`);element.style.setProperty('--lock-hint-y',`${y}px`);}
-function showLockHint(element,event){moveLockHint(event,element);element.classList.add('show-lock-hint');clearTimeout(element.lockHintTimer);element.lockHintTimer=setTimeout(()=>element.classList.remove('show-lock-hint'),2600);}
+function moveLockHint(event,element){if(!event||typeof event.clientX!=='number')return;const width=360;const x=Math.min(event.clientX+14,Math.max(8,window.innerWidth-width));const y=Math.min(event.clientY+16,Math.max(8,window.innerHeight-36));lockTooltip.textContent=element.dataset.lockMessage;lockTooltip.style.left=`${x}px`;lockTooltip.style.top=`${y}px`;lockTooltip.classList.add('visible');}
+function showLockHint(element,event){moveLockHint(event,element);lockTooltip.classList.add('persistent');clearTimeout(element.lockHintTimer);element.lockHintTimer=setTimeout(()=>lockTooltip.classList.remove('visible','persistent'),2600);}
+document.addEventListener('pointerout',event=>{const lock=event.target.closest?.('.button-lock');const next=event.relatedTarget?.closest?.('.button-lock');if(lock&&lock!==next&&!lockTooltip.classList.contains('persistent'))lockTooltip.classList.remove('visible');});
 function ext(label,url,secondary=false){ return `<a class="button ${secondary?'secondary':''}" href="${url}" target="_blank" rel="noopener">${label}</a>`; }
 function randomSet(){ return [...questions].sort(()=>Math.random()-.5).slice(0,10).map(q=>q.id); }
 function boltReady(){ return (!state.boltUntil || remaining(state.boltUntil)===0) && (!state.retryUntil || remaining(state.retryUntil)===0); }
