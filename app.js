@@ -93,6 +93,7 @@ function welcome(){
     ['◈','Autonomie','Ești propriul șef - tu decizi nivelul de muncă și cum o faci','dar sperăm să ții cont de conduita de bun simț și cooperare a platformelor și flotei 🙏'],
     ['◉','Câștiguri competitive','3.000-6.000 lei/lună venit net','noi îți oferim sfaturi, bonusuri și campanii pentru a-ți maximiza profitul - tu decizi unde pui pragul 💪'],
     ['▤','Plăți și rapoarte săptămânale stabile','Încasările tale sunt în siguranță cu noi','primești raport săptămânal și plata direct pe IBAN; plată corectă până la ultimul cent, pentru munca ta 👌'],
+    ['◌','Suport dedicat','Staff-ul și comunitatea îți sunt alături','oricând ai probleme, nu ești singur - comunitatea, staff-ul flotei, cât și asistența de la platforme îți sunt alături'],
     ['◇','Siguranță','Un mediu sigur și stabil','datele și activitatea ta din cadrul flotei sunt în siguranță cu noi - adică, ești în siguranță cu noi ✌️'],
     ['✦','Sistemul flotei','Platforme unice, tehnologie intuitivă','avem aplicație mobilă, grup de comunitate, canal de anunțuri, sistem de ticketing și multe altele']
   ];
