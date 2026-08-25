@@ -247,3 +247,16 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 /* Supporting notes give every benefit helpful context without competing with its title. */
 .benefits-panel .benefit-note{display:block;margin-top:6px;color:#8fa1b4;font-family:Georgia,"Times New Roman",serif;font-size:11px;font-style:italic;line-height:1.38}
 @media(max-width:780px){.benefits-panel li:last-child{grid-column:auto}}
+
+/* On phones, the full seven-step journey becomes one compact, swipeable ribbon. */
+@media(max-width:780px){
+  .cibero-stepper{display:flex!important;align-items:flex-start;justify-content:flex-start;gap:0;min-width:0!important;overflow-x:auto!important;overflow-y:visible;scroll-snap-type:x proximity;scrollbar-width:none;margin:0 -12px 18px!important;padding:10px 14px 14px!important;grid-template-columns:none!important;grid-template-rows:none!important;row-gap:0!important}
+  .cibero-stepper::-webkit-scrollbar{display:none}
+  .cibero-stepper>.step{display:flex!important;flex:0 0 82px;grid-column:auto!important;grid-row:auto!important;width:82px!important;min-height:71px;gap:5px;scroll-snap-align:center;color:#c3ad7a;font-size:10px!important;line-height:1.18;text-align:center;white-space:normal!important}
+  .cibero-stepper .step-label{display:block;max-width:82px}
+  .cibero-stepper .progress-icon{width:38px;height:38px}
+  .cibero-stepper .progress-icon svg{width:18px;height:18px}
+  .cibero-stepper>.step.current .progress-icon{width:43px;height:43px}
+  .cibero-stepper>.step-connector,.cibero-stepper>.step-connector:nth-child(2),.cibero-stepper>.step-connector:nth-child(4),.cibero-stepper>.step-connector:nth-child(6),.cibero-stepper>.step-connector:nth-child(8),.cibero-stepper>.step-connector:nth-child(10),.cibero-stepper>.step-connector:nth-child(12){display:block!important;flex:0 0 13px;grid-column:auto!important;grid-row:auto!important;width:13px;min-width:13px;max-width:13px;height:1px;margin:19px 0 0;background:linear-gradient(90deg,rgba(211,163,64,.68),rgba(211,163,64,.2))}
+  .cibero-stepper>.step-connector::after{display:none}
+}
