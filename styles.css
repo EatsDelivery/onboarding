@@ -248,6 +248,10 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 .benefits-panel .benefit-note{display:block;margin-top:6px;color:#8fa1b4;font-family:Georgia,"Times New Roman",serif;font-size:11px;font-style:italic;line-height:1.38}
 @media(max-width:780px){.benefits-panel li:last-child{grid-column:auto}}
 
+/* On desktop, both halves of the opening panel finish on the same baseline. */
+@media(min-width:781px){.welcome-layout{align-items:stretch}.welcome-content{display:flex;flex-direction:column}.welcome-content .actions{margin-top:auto;padding-top:26px}}
+@media(max-width:780px){.welcome-content .actions{margin-top:32px;padding-top:0}}
+
 /* On phones, the full seven-step journey becomes one compact, swipeable ribbon. */
 @media(max-width:780px){
   .cibero-stepper{display:flex!important;align-items:flex-start;justify-content:flex-start;gap:0;min-width:0!important;overflow-x:auto!important;overflow-y:visible;scroll-snap-type:x proximity;scrollbar-width:none;margin:0 -12px 18px!important;padding:10px 14px 14px!important;grid-template-columns:none!important;grid-template-rows:none!important;row-gap:0!important}
