@@ -233,6 +233,28 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 .registration-note{margin-top:24px!important;text-align:center}.registration-attention-title{display:flex;align-items:center;justify-content:center;gap:10px;color:#f4cd68;font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,4vw,32px);line-height:1.15}.registration-attention-title span{display:grid;place-items:center;width:34px;height:34px;border:1px solid rgba(239,192,80,.75);border-radius:50%;background:rgba(106,65,13,.35);color:#ffe08b;font-family:Arial,sans-serif;font-size:21px;line-height:1}.registration-attention-title strong{color:#ffe4a0}.registration-note p{margin:13px 0 0!important;color:#f0e4c8!important;font-size:16px!important;line-height:1.58!important}.registration-dialog .registration-confirmation{margin-top:22px}
 .guided-reveal{animation:guided-reveal .48s ease-out both}@keyframes guided-reveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.guided-reveal{animation:none}}
 
+/* Step 3 continues inside the same card: equipment first, then a concise hygiene module. */
+.equipment-tabs-card{margin-top:4px;overflow:hidden;border:1px solid rgba(225,181,76,.72);border-radius:18px;background:linear-gradient(145deg,rgba(13,44,72,.94),rgba(5,21,38,.98));box-shadow:0 18px 42px rgba(0,0,0,.22)}
+.equipment-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(225,181,76,.38);background:rgba(2,14,27,.38)}
+.equipment-tab{position:relative;appearance:none;border:0;background:transparent;padding:16px 13px;color:#bdaf8d;font-family:Georgia,"Times New Roman",serif;font-size:16px;font-weight:700;cursor:pointer}
+.equipment-tab.is-active{color:#ffe4a1;background:linear-gradient(180deg,rgba(216,166,57,.18),rgba(7,29,50,.1))}
+.equipment-tab.is-active::after{content:"";position:absolute;right:15%;bottom:-1px;left:15%;height:3px;border-radius:4px;background:linear-gradient(90deg,#936617,#ffe59a,#9a6918)}
+.equipment-tab-check{display:inline-grid;place-items:center;width:17px;height:17px;margin-right:7px;border-radius:50%;background:#25856f;color:#edfff7;font-family:Arial,sans-serif;font-size:12px}
+.equipment-tab-panel{padding:26px 28px 28px}
+.equipment-tab-heading{display:flex;align-items:flex-start;gap:13px;margin:0 0 20px}
+.equipment-tab-heading>span{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border:1px solid rgba(230,187,76,.76);border-radius:50%;background:rgba(5,21,38,.58);color:#f5d173;font-family:Arial,sans-serif;font-size:19px}
+.equipment-tab-heading h2{margin:0!important;color:#ffe29a!important;font-size:clamp(24px,3.2vw,31px)!important}
+.equipment-tab-heading p{margin:4px 0 0!important;color:#d9e3e4!important;font-size:16px!important;line-height:1.55!important}
+.equipment-complete-panel{min-height:255px}.equipment-tab-transition{margin:0!important;padding:12px 14px;border-left:3px solid #d8ab41;border-radius:0 10px 10px 0;background:rgba(220,174,64,.1);color:#e8d4a2!important;font-size:15px!important}
+.hygiene-notice{margin:0 0 20px!important;padding:13px 15px;border-left:3px solid #d7a83e;border-radius:0 10px 10px 0;background:rgba(219,171,59,.1);color:#f2dfad!important;font-size:16px!important;font-weight:700;line-height:1.55!important}
+.hygiene-rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hygiene-rules section{padding:14px 13px;border:1px solid rgba(100,158,182,.27);border-radius:11px;background:rgba(2,17,32,.48)}
+.hygiene-rules h3{margin:0 0 9px;color:#f6cf69;font-size:17px}
+.hygiene-rules ul{margin:0;padding:0;list-style:none;color:#d8e3e7;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.45}
+.hygiene-rules li{position:relative;margin:0 0 8px;padding-left:14px}.hygiene-rules li:last-child{margin-bottom:0}.hygiene-rules li::before{content:"•";position:absolute;left:0;color:#ebbe53}
+.hygiene-confirmation{margin-top:21px!important}
+@media(max-width:680px){.equipment-tab{padding:14px 8px;font-size:14px}.equipment-tab-panel{padding:22px 16px}.equipment-tab-heading{gap:10px}.equipment-tab-heading>span{width:34px;height:34px;flex-basis:34px}.equipment-tab-heading p{font-size:15px!important}.hygiene-rules{grid-template-columns:1fr}.equipment-complete-panel{min-height:0}}
+
 /* Seven clearly numbered stages, with a compact but readable header at every size. */
 .cibero-stepper>.step{font-size:12px}.cibero-stepper>.step-connector{min-width:20px;max-width:54px;margin-left:6px;margin-right:6px}
 @media(max-width:780px){.cibero-stepper{grid-template-rows:auto auto auto}.cibero-stepper>.step:nth-child(13){grid-column:3;grid-row:3}.cibero-stepper>.step-connector:nth-child(12){display:none}}
