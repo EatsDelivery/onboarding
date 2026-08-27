@@ -252,6 +252,9 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.18),rgba(3,8,16,.52))
 .hygiene-rules h3{margin:0 0 9px;color:#f6cf69;font-size:17px}
 .hygiene-rules ul{margin:0;padding:0;list-style:none;color:#d8e3e7;font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:1.45}
 .hygiene-rules li{position:relative;margin:0 0 8px;padding-left:14px}.hygiene-rules li:last-child{margin-bottom:0}.hygiene-rules li::before{content:"•";position:absolute;left:0;color:#ebbe53}
+.hygiene-official-note{display:flex;align-items:flex-start;gap:10px;margin:20px 0 0;padding:13px 15px;border:1px solid rgba(230,181,72,.54);border-left:3px solid #e6b54a;border-radius:11px;background:linear-gradient(135deg,rgba(109,69,14,.23),rgba(8,29,49,.58))}
+.hygiene-official-note>span{display:grid;place-items:center;flex:0 0 auto;width:23px;height:23px;margin-top:2px;border-radius:50%;background:rgba(211,151,39,.28);color:#ffe08b;font-family:Arial,sans-serif;font-size:14px;font-weight:800}
+.hygiene-official-note p{margin:0!important;color:#f2dfae!important;font-size:15px!important;font-weight:700;line-height:1.52!important}.hygiene-official-note a{color:#ffe192!important;font-weight:700;text-decoration-color:rgba(255,225,146,.72);text-underline-offset:3px}
 .hygiene-confirmation{margin-top:21px!important}
 @media(max-width:680px){.equipment-tab{padding:14px 8px;font-size:14px}.equipment-tab-panel{padding:22px 16px}.equipment-tab-heading{gap:10px}.equipment-tab-heading>span{width:34px;height:34px;flex-basis:34px}.equipment-tab-heading p{font-size:15px!important}.hygiene-rules{grid-template-columns:1fr}.equipment-complete-panel{min-height:0}}
 
