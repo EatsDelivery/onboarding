@@ -18,6 +18,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;background:linear-gradie
 .button:hover:not(:disabled){filter:brightness(1.06);box-shadow:0 12px 28px rgba(21,197,137,.3)}
 .resume-dialog{background:linear-gradient(145deg,rgba(26,39,59,.98),rgba(13,21,35,.97));backdrop-filter:blur(18px)}
 .site-title{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;margin:0 0 126px;text-align:center;color:#f6f8fc;font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.04em;text-wrap:balance;text-shadow:0 4px 22px rgba(0,0,0,.48);overflow:visible}
+.home-back{display:inline-flex;align-items:center;margin:0 0 18px;color:#f4d985;font-size:14px;font-weight:800;text-decoration:none;transition:color .18s ease,transform .18s ease}.home-back:hover{transform:translateX(-2px);color:#fff0aa}
 .site-title img{position:relative;z-index:1;display:block;width:144px;height:144px;object-fit:contain;filter:drop-shadow(0 9px 17px rgba(0,0,0,.42))}
 
 /* Quiz cards: the prompt forms a connected header for its answers. */
@@ -137,6 +138,7 @@ body::after{background:linear-gradient(180deg,rgba(3,8,16,.66),rgba(4,8,17,.93))
 .result{border-color:#d8aa47;background:linear-gradient(145deg,#273d34,#142b29)}.result.fail{border-color:#b97252}
 .resume-dialog{border-color:rgba(236,199,112,.38);background:linear-gradient(145deg,rgba(45,40,29,.98),rgba(12,23,37,.98));box-shadow:0 24px 70px rgba(0,0,0,.52),inset 0 1px 0 rgba(255,233,169,.08)}
 footer{color:#b6a77e}
+@media(max-width:560px){.home-back{margin-bottom:12px;font-size:13px}}
 
 /* A visible metallic frame around every onboarding prompt. */
 .card{position:relative;isolation:isolate;border:0!important;background:linear-gradient(145deg,rgba(13,28,45,.96),rgba(5,15,28,.97))!important}
